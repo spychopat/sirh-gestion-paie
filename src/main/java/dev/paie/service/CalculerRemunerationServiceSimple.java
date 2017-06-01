@@ -2,6 +2,7 @@ package dev.paie.service;
 
 import java.math.BigDecimal;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ import dev.paie.util.PaieUtils;
 public class CalculerRemunerationServiceSimple implements CalculerRemunerationService{
 
 
-	private PaieUtils paieUtils;
+	private PaieUtils paieUtils; 
 	private ClassPathXmlApplicationContext context;
 	
 	@Override
