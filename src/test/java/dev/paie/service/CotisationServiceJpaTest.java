@@ -13,7 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import dev.paie.config.ServicesConfig;
 import dev.paie.entite.Cotisation;
-import dev.paie.entite.Grade;
 
 //Sélection des classes de configuration Spring à utiliser lors du test
 @ContextConfiguration(classes = { ServicesConfig.class })

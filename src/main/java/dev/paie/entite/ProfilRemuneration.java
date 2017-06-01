@@ -9,9 +9,7 @@ public class ProfilRemuneration {
 	private String code;
 
 	private List<Cotisation> cotisationsNonImposables;
-	
 	private List<Cotisation> cotisationsImposables;
-	
 	private List<Avantage> avantages;
 
 	public Integer getId() {
