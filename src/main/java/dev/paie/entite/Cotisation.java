@@ -2,8 +2,15 @@ package dev.paie.entite;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.springframework.transaction.annotation.Transactional;
+
+@Entity
+@Transactional
 public class Cotisation {
-	
+	@Id
 	private Integer id;
 	private String code;
 	private String libelle;
