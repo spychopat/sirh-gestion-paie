@@ -1,4 +1,6 @@
-package dev.paie.spring;
+package dev.paie.config;
+
+import java.util.Properties;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -27,7 +29,7 @@ public class JpaConfig {
 	// Elle s'utilise donc en association avec un autre fichier de configuration définissant un bean DataSource.
 	public EntityManagerFactory entityManagerFactory(DataSource dataSource) {
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-		vendorAdapter.setGenerateDdl(true);
+		//vendorAdapter.setGenerateDdl(true);
 		// activer les logs SQL
 		vendorAdapter.setShowSql(true);
 		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
@@ -35,8 +37,12 @@ public class JpaConfig {
 		// alternative au persistence.xml
 		factory.setPackagesToScan("dev.paie.entite");
 		factory.setDataSource(dataSource);
+		
+		Properties jpaProperties = new Properties(); 
+		jpaProperties.setProperty("javax.persistence.schema-generation.database.action", "drop-and-create");
+		factory.setJpaProperties(jpaProperties);
+		
 		factory.afterPropertiesSet();
 		return factory.getObject();
 	}
-
 }
