@@ -20,7 +20,7 @@ import dev.paie.spring.DataSourceMySQLConfig;
 @EnableWebMvc
 @ComponentScan("dev.paie.web.controller")
 @ImportResource({"classpath:grades.xml","classpath:entreprises.xml","classpath:profils-remuneration.xml","classpath:cotisations-imposables.xml","classpath:cotisations-non-imposables.xml"})
-@Import({ServicesConfig.class})
+@Import({ServicesConfig.class, SecurityConfig.class})
 public class WebAppConfig {
 	
     @Bean
