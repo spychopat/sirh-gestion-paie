@@ -10,16 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
 import dev.paie.entite.BulletinSalaire;
-import dev.paie.entite.Entreprise;
-import dev.paie.entite.Periode;
-import dev.paie.entite.RemunerationEmploye;
 import dev.paie.repository.BulletinRepository;
-import dev.paie.repository.EntrepriseRepository;
-import dev.paie.repository.GradeRepository;
 import dev.paie.repository.PeriodeRepository;
-import dev.paie.repository.ProfilRepository;
 import dev.paie.repository.RemunerationEmployeRepository;
 
 @Controller
