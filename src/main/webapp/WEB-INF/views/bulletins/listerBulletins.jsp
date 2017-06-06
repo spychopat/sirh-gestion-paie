@@ -8,24 +8,25 @@
 
 
 
-	<h1>Les collaborateurs</h1>
+	<h1>Bulletins de salaire</h1>
 
 	<!-- Liste des noms -->
 
 	<div class="table-responsive">
 		<table class="table">
 			<tr>
+				<th>Date création</th>
+				<th>Période</th>
 				<th>Matricule</th>
-				<th>Entreprise</th>
-				<th>Grade</th>
-				<th>Profil Remunération</th>
+				<th>Salaire brut</th>
+				<th>Net imposable</th>
+				<th>Net à payer</th>
 			</tr>
-			<c:forEach var="employe" items="${employes}">
+			<c:forEach var="bulletin" items="${bulletins}">
 				<tr>
-					<td>${employe.matricule}</td>
-					<td>${employe.entreprise.denomination}</td>
-					<td>${employe.grade.code}</td>
-					<td>${employe.profilRemuneration.code}</td>
+				<!--  TODO
+					<td>${bulletin.matricule}</td>
+					-->
 				</tr>
 			</c:forEach>
 		</table>

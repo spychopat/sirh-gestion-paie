@@ -15,9 +15,7 @@
 </head>
 
 
-	<a href="./lister" class="btn btn-primary">Liste Collaborateur</a>
-	<a href="./creer" class="btn btn-primary">Nouveau Collaborateur</a>
-	<!-- 
-	<a href="./statistiques" class="btn btn-primary">Statistiques</a>
-	<a href="./activites" class="btn btn-primary">Activités</a>
-	-->
+	<a href="../employes/lister" class="btn btn-primary">Liste Collaborateur</a>
+	<a href="../employes/creer" class="btn btn-primary">Nouveau Collaborateur</a>
+	<a href="../bulletins/lister" class="btn btn-primary">Liste Bulletin de salaire</a>
+	<a href="../bulletins/creer" class="btn btn-primary">Nouveau Bulletin de salaire</a>

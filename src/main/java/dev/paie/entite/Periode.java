@@ -16,7 +16,7 @@ public class Periode {
 	private LocalDate dateDebut;
 	private LocalDate dateFin;
 	
-	
+	public Periode(){}
 	
 	public Periode(LocalDate dateDebut, LocalDate dateFin) {
 		super();

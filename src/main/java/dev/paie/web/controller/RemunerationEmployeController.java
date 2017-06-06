@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import dev.paie.entite.Entreprise;
+import dev.paie.entite.Periode;
 import dev.paie.entite.RemunerationEmploye;
 import dev.paie.repository.EntrepriseRepository;
 import dev.paie.repository.GradeRepository;
+import dev.paie.repository.PeriodeRepository;
 import dev.paie.repository.ProfilRepository;
 import dev.paie.repository.RemunerationEmployeRepository;
 
@@ -22,6 +24,7 @@ public class RemunerationEmployeController {
 	@Autowired private EntrepriseRepository entreprise;
 	@Autowired private ProfilRepository profil;
 	@Autowired private GradeRepository grade;
+	@Autowired private PeriodeRepository periode;
 	@Autowired private RemunerationEmployeRepository remuEmploye;
 	
 	
@@ -66,6 +69,11 @@ public class RemunerationEmployeController {
 		return new ModelAndView("redirect:./lister");
 		
 	}
+	
+	
+	
+	
+
 
 
 }
