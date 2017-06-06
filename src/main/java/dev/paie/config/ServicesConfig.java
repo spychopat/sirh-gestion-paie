@@ -9,8 +9,7 @@ import dev.paie.spring.DataSourceMySQLConfig;
 
 @Configuration
 @ComponentScan({"dev.paie.service", "dev.paie.util"})
-//@Import(DataSourceMySQLConfig.class)
-@Import({JpaConfig.class, DataSourceMySQLConfig.class})
+@Import({DataSourceMySQLConfig.class, JpaConfig.class})
 @EnableJpaRepositories("dev.paie.repository")
 public class ServicesConfig {
 

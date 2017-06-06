@@ -36,7 +36,6 @@ public class CalculerRemunerationServiceSimpleTest {
 	}
 	
 	
-	
 	@Test
 	public void test_calculer() {
 		//TODO remplacer null par un objet bulletin

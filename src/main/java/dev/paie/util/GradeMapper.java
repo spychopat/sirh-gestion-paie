@@ -1,5 +1,6 @@
 package dev.paie.util;
 
+import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -9,13 +10,12 @@ import dev.paie.entite.Grade;
 
 public class GradeMapper implements RowMapper<Grade> {
 
-	@Override
 	public Grade mapRow(ResultSet rs, int rowNum) throws SQLException {
-		Grade p = new Grade();
-		p.setId(rs.getInt("id"));
-		p.setCode(rs.getString("code"));
-		p.setNbHeuresBase(rs.getBigDecimal("nbHeuresBase"));
-		p.setTauxBase(rs.getBigDecimal("tauxBase"));
-		return p;
+		Grade g = new Grade();
+		g.setId(rs.getInt("ID"));
+		g.setCode(rs.getString("CODE"));
+		g.setNbHeuresBase(rs.getBigDecimal("nbHeuresBase"));
+		g.setTauxBase(rs.getBigDecimal("TAUXBASE"));
+		return g;
 	}
 }

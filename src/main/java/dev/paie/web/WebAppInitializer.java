@@ -1,6 +1,5 @@
 package dev.paie.web;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -44,5 +43,6 @@ class>org.springframework.web.context.ContextLoaderListener</listener-class>
 				 */
 				servletContext.addListener(new ContextLoaderListener(webContext));
 	}
+	
 	
 }
