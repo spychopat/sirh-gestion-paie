@@ -1,10 +1,12 @@
 <%@page import="java.util.List"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <%@ include file="../entete.jsp" %>
 </head>
 <form class="form-horizontal" method="post">
+
 	<fieldset>
 		<h1>Ajouter Un Employé</h1>
 		<!-- matricule-->
@@ -58,6 +60,7 @@
 			</div>
 		</div>
 	</fieldset>
+	<sec:csrfInput/>
 </form>
 </body>
 </html>

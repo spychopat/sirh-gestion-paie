@@ -1,6 +1,7 @@
 <%@page import="java.util.List"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <%@ include file="../entete.jsp" %>
 </head>
@@ -48,6 +49,7 @@
 			</div>
 		</div>
 	</fieldset>
+	<sec:csrfInput/>
 </form>
 </body>
 </html>
